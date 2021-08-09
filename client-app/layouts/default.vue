@@ -2,6 +2,7 @@
   <div class="w-100">
     <header id="header-default">
       <div class="d-flex border-bottom text-center px-5 py-1">
+          
         <div class="mx-4">
           <img width="20px" src="~/assets/icons/phone-icon-black.jpg" alt="" />
           <span>(xx) 98764-1932</span>
@@ -22,8 +23,9 @@
         <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
         <b-collapse id="nav-collapse" is-nav>
           <div class="w-100 text-center">
-            <NuxtLink class="hover-verde" to="/"
+            <NuxtLink to="/" class="hover-padrao"
               ><img
+              class="rounded-circle "
                 width="200px"
                 src="~/assets/Logo/Logos/LOGO PAKTOR PRINCIPAL.png"
                 alt=""
@@ -40,7 +42,10 @@
         </b-collapse>
       </b-navbar>
     </header>
+    <main>
     <Nuxt />
+
+    </main>
 
     <footer class="mt-3">
       <b-row class="p-4 text-center" id="footer-default">
@@ -57,13 +62,12 @@
         </b-col>
         <b-col
           ><img
-            width="200px"
+            width="220px"
             src="~/assets/Logo/Logos/LOGO PAKTOR PRINCIPAL.png"
             alt=""
           />
         </b-col>
       </b-row>
-
       <div class="text-center">
         <span>Feito por Felipe Modena - <a href="">Portfólio</a> </span>
       </div>
@@ -71,17 +75,20 @@
   </div>
 </template>
 
-<style >
-.hover-verde {
-  transition: 0.7s;
-}
-.hover-verde :hover {
-  transition: 0.7s;
-  background: linear-gradient(green, rgb(180, 177, 177));
-}
+<style scoped>
+
 #footer-default {
-  background-image: url("~assets/Grafismo/Grafismo_6.png"),
-    linear-gradient(rgb(80, 105, 80), rgb(27, 189, 35));
+  background-image: url("~assets/Grafismo/Grafismo_6.png");
   background-size: 100%;
+  margin: 9px 0 0 0;
+}
+
+.hover-padrao{
+  background: rgb(255, 255, 255);
+    transition: 0.9s;
+}
+.hover-padrao :hover{
+    transition: 0.9s;
+  background: greenyellow;
 }
 </style>

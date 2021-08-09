@@ -1,6 +1,6 @@
 <template>
   <div class="w-100 container">
-    <!-- <Caroussel /> -->
+    <Caroussel />
     <div>
       <h3>Bem vindo!</h3>
       <br />

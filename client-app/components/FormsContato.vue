@@ -1,5 +1,5 @@
 <template>
-  <b-row>
+  <b-row class="px-5">
     <b-col class="forms-contato-grid">
       <h3>Fale Conosco</h3>
       <span>Fale conosco enviando uma mensagem a baixo! </span>

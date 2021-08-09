@@ -1,3 +1,7 @@
 <template>
-    <div>contato</div>
+  <div>
+    <FormsContato />
+
+
+  </div>
 </template>
