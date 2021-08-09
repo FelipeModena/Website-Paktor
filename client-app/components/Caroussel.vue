@@ -1,28 +1,7 @@
 <template>
   <div>
-    <carousel-3d>
-      <slide :index="0">
-        <img
-          src="~/assets/Aplicacoes/carimbo.png"
-          alt=""
-        />
-      </slide>
-      <slide :index="1"> Slide 2 Content </slide>
-      <slide :index="2">
-        <img
-          width="100%"
-          src="~/assets/Aplicacoes/garrafa e mochila.png"
-          alt=""
-        />
-      </slide>
-      <slide :index="3">
-        <img
-          src="~/assets/Aplicacoes/letreiro.png"
-          alt=""
-        />
-      </slide>
-    </carousel-3d>
-    <!-- <b-carousel
+
+    <b-carousel
       id="carousel-no-animation"
       style="text-shadow: 0px 0px 2px #000"
       indicators
@@ -42,7 +21,7 @@
         caption="First slide"
         img-src="~/assets/Aplicacoes/letreiro.png"
       ></b-carousel-slide>
-    </b-carousel> -->
+    </b-carousel>
   </div>
 </template>
 
