@@ -1,8 +1,7 @@
 <template>
   <div class="w-100">
     <header id="header-default">
-      <div class="d-flex border-bottom text-center px-5 py-1">
-          
+      <!-- <div class="d-flex border-bottom text-center px-5 py-1">
         <div class="mx-4">
           <img width="20px" src="~/assets/icons/phone-icon-black.jpg" alt="" />
           <span>(xx) 98764-1932</span>
@@ -17,7 +16,7 @@
           src="~/assets/icons/instagram-(1).png"
           alt=""
         />
-      </div>
+      </div> -->
 
       <b-navbar toggleable="lg">
         <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
@@ -36,6 +35,9 @@
               <button class="btn btn-success">Quem Somos</button>
             </NuxtLink>
             <NuxtLink to="contato"
+              ><button class="btn btn-success">Portfólio</button>
+            </NuxtLink>
+                        <NuxtLink to="contato"
               ><button class="btn btn-success">Contato</button>
             </NuxtLink>
           </div>
@@ -90,5 +92,12 @@
 .hover-padrao :hover{
     transition: 0.9s;
   background: greenyellow;
+}
+
+@media only screen and (max-width: 600px) {
+  #nav-collapse {
+    display: grid;
+    grid-template-columns: auto;
+  }
 }
 </style>
