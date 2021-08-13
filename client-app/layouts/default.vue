@@ -1,6 +1,6 @@
 <template>
   <div class="w-100">
-    <header >
+    <header>
       <b-navbar toggleable="lg" class="p-0">
         <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
         <b-collapse id="nav-collapse" is-nav>
@@ -14,7 +14,7 @@
               />
             </NuxtLink>
             <br /><br />
-            <div id="nav-bar-botoes-rota" class=" py-2 bg-dark">
+            <div id="nav-bar-botoes-rota" class="py-2 bg-dark">
               <NuxtLink to="quemSomos" class="mx-1">
                 <button class="btn btn-success">Quem Somos</button>
               </NuxtLink>
@@ -62,9 +62,9 @@
 </template>
 
 <style scoped>
-
-#nav-bar-botoes-rota{
-background: linear-gradient(to left, transparent, rgb(102, 98, 98))}
+#nav-bar-botoes-rota {
+  background: linear-gradient(to left, transparent, rgb(102, 98, 98));
+}
 #footer-default {
   background-image: url("~/assets/footer-img.png");
   background-size: 100%;

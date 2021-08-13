@@ -6,7 +6,7 @@
         Bem vindo! a <strong class="text-success"> Paktor Engenharia </strong>
       </h3>
       <br />
-      <p>
+      <p class="text-justify"> 
         Fundada em 2021, a <strong>Paktor Engenharia e Construções</strong> visa
         auxiliar o mercado da construção civil com serviços que vão desde
         projetos novos, reformas à construção de prédios e casas. Fernando
@@ -16,7 +16,7 @@
         corporação técnicas inovadoras e sustentáveis com o objetivo de diminuir
         custos e desperdícios.
       </p>
-      <p>
+      <p class="text-justify">
         Estamos continuamente olhando para o futuro, trazendo o que há de mais
         inovador e moderno, com profissionalismo e uma equipe altamente
         qualificada para dar vida ao seu sonho.
