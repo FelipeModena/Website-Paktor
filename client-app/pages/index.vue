@@ -1,10 +1,12 @@
 <template>
-  <div class="w-100 container">
+  <div class="w-100">
     <Caroussel />
-    <div>
-      <h3>Bem vindo!</h3>
+    <div class="px-5 mt-4">
+      <h3>
+        Bem vindo! a <strong class="text-success"> Paktor Engenharia </strong>
+      </h3>
       <br />
-      <p class="text-center">
+      <p>
         Fundada em 2021, a <strong>Paktor Engenharia e Construções</strong> visa
         auxiliar o mercado da construção civil com serviços que vão desde
         projetos novos, reformas à construção de prédios e casas. Fernando
@@ -20,6 +22,21 @@
         qualificada para dar vida ao seu sonho.
       </p>
     </div>
+    <div></div>
+    <div class="grid-galeria-fotos container text-center mt-4">
+      <div
+        v-for="(item, index) in 8"
+        :key="index"
+        class="border border-primary m-1"
+      >
+        <img
+          src="~/assets/Elementos/ELEMENTOS/Elementos-05.png"
+          width="150px"
+          alt=""
+        />
+      </div>
+    </div>
+
     <FormsContato />
   </div>
 </template>
@@ -31,3 +48,18 @@ export default {
   },
 };
 </script>
+<style scoped>
+.grid-galeria-fotos {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  justify-items: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 900px) {
+  .grid-galeria-fotos {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+}
+</style>

@@ -1,24 +1,19 @@
 <template>
   <div>
-
     <b-carousel
-      id="carousel-no-animation"
-      style="text-shadow: 0px 0px 2px #000"
+    class=""
       indicators
       controls
-      img-width="2"
-      img-height="200"
+      img-height="100"
     >
       <b-carousel-slide
+        img-height="100"
         img-src="~/assets/Aplicacoes/carimbo.png"
-        caption="First slide"
       ></b-carousel-slide>
       <b-carousel-slide
-        caption="First slide"
         img-src="~/assets/Aplicacoes/garrafa e mochila.png"
       ></b-carousel-slide>
       <b-carousel-slide
-        caption="First slide"
         img-src="~/assets/Aplicacoes/letreiro.png"
       ></b-carousel-slide>
     </b-carousel>
@@ -33,3 +28,9 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+.carousel-componente img{
+height: 100px !important;
+}
+</style>

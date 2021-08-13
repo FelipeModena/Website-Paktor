@@ -1,3 +1,20 @@
+@font-face {
+  font-family: 'RobotoMono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('assets/fonte/static/RobotoMono-Regular.ttf') format('truetype');
+}
+
+body h1,p
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "RobotoMono";
+}
+
 .page-enter-active,
 .page-leave-active {
   transition: opacity 0.5s;
@@ -7,6 +24,9 @@
   opacity: 0;
 }
 
-p{
-  color: #5e515b;
+.fundo-primario{
+  background-color: #404449;
+  color: rgb(255, 255, 255);
 }
+
+

@@ -1,52 +1,36 @@
 <template>
   <div class="w-100">
-    <header id="header-default">
-      <!-- <div class="d-flex border-bottom text-center px-5 py-1">
-        <div class="mx-4">
-          <img width="20px" src="~/assets/icons/phone-icon-black.jpg" alt="" />
-          <span>(xx) 98764-1932</span>
-        </div>
-        <div class="mx-4">
-          <img width="20px" src="~/assets/icons/message-(2).png" alt="" />
-          <span>paktor_contato@gmail.com</span>
-        </div>
-        <img
-          width="20px"
-          class="float-right"
-          src="~/assets/icons/instagram-(1).png"
-          alt=""
-        />
-      </div> -->
-
-      <b-navbar toggleable="lg">
+    <header >
+      <b-navbar toggleable="lg" class="p-0">
         <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
         <b-collapse id="nav-collapse" is-nav>
           <div class="w-100 text-center">
             <NuxtLink to="/" class="hover-padrao"
               ><img
-              class="rounded-circle "
+                class="rounded-circle"
                 width="200px"
                 src="~/assets/Logo/Logos/LOGO PAKTOR PRINCIPAL.png"
                 alt=""
               />
             </NuxtLink>
-            <br />
-            <NuxtLink to="quemSomos">
-              <button class="btn btn-success">Quem Somos</button>
-            </NuxtLink>
-            <NuxtLink to="contato"
-              ><button class="btn btn-success">Portfólio</button>
-            </NuxtLink>
-                        <NuxtLink to="contato"
-              ><button class="btn btn-success">Contato</button>
-            </NuxtLink>
+            <br /><br />
+            <div id="nav-bar-botoes-rota" class=" py-2 bg-dark">
+              <NuxtLink to="quemSomos" class="mx-1">
+                <button class="btn btn-success">Quem Somos</button>
+              </NuxtLink>
+              <NuxtLink to="portfolio" class="mx-1"
+                ><button class="btn btn-success">Portfólio</button>
+              </NuxtLink>
+              <NuxtLink to="contato" class="mx-1"
+                ><button class="btn btn-success">Contato</button>
+              </NuxtLink>
+            </div>
           </div>
         </b-collapse>
       </b-navbar>
     </header>
     <main>
-    <Nuxt />
-
+      <Nuxt />
     </main>
 
     <footer class="mt-3">
@@ -59,7 +43,7 @@
         </b-col>
         <b-col>
           <h4>CONTATOS</h4>
-          <span>(11) 98988-6105</span>
+          <p>(11) 98988-6105</p>
           <p>paktor_contato@gmail.com</p>
         </b-col>
         <b-col
@@ -70,31 +54,36 @@
           />
         </b-col>
       </b-row>
-      <div class="text-center">
+      <!-- <div class="text-center">
         <span>Feito por Felipe Modena - <a href="">Portfólio</a> </span>
-      </div>
+      </div> -->
     </footer>
   </div>
 </template>
 
 <style scoped>
 
+#nav-bar-botoes-rota{
+background: linear-gradient(to left, transparent, rgb(102, 98, 98))}
 #footer-default {
-  background-image: url("~assets/Grafismo/Grafismo_6.png");
+  background-image: url("~/assets/footer-img.png");
   background-size: 100%;
   margin: 9px 0 0 0;
 }
 
-.hover-padrao{
+.hover-padrao {
   background: rgb(255, 255, 255);
-    transition: 0.9s;
+  transition: 0.9s;
 }
-.hover-padrao :hover{
-    transition: 0.9s;
+.hover-padrao :hover {
+  transition: 0.9s;
   background: greenyellow;
 }
 
 @media only screen and (max-width: 600px) {
+  #footer-default {
+    background-size: cover;
+  }
   #nav-collapse {
     display: grid;
     grid-template-columns: auto;
