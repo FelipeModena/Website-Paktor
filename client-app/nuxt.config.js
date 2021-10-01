@@ -23,31 +23,26 @@ export default {
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
-    {src: '~/plugins/carrousel3D.js', mode:'client' }
+    { src: '~/plugins/carrousel3D.js', mode: 'client' },
+    '@/plugins/gtag',
+    {src:"~/plugins/analytics.js", mode:"client"}
   ],
 
-  // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
 
-  googleAnalytics: {
-    id: 'G-4KS90JCP4E'
-  },
 
-
-  // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
     '@nuxtjs/google-fonts',
-    '@nuxtjs/google-analytics'
     ['@nuxtjs/google-fonts', { /* module options */ }]
   ],
-
-
-  // Modules: https://go.nuxtjs.dev/config-modules
+  
+  
   modules: [
     // https://go.nuxtjs.dev/axios
+    '@nuxtjs/google-analytics',
     '@nuxtjs/axios',
     'bootstrap-vue/nuxt',
-    ],
+  ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {},
