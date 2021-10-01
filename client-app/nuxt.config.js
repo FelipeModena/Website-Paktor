@@ -24,7 +24,6 @@ export default {
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
     { src: '~/plugins/carrousel3D.js', mode: 'client' },
-    '@/plugins/gtag',
     {src:"~/plugins/analytics.js", mode:"client"}
   ],
 
